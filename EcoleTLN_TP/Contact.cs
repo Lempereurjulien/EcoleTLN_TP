@@ -20,14 +20,4 @@ namespace Classes.ClassesEcole
         }       
     }
 
-    class secretaire : Personnel
-    {
-
-    }
-
-    class Enseignant : Personnel
-    {
-        
-    }
-
 }
