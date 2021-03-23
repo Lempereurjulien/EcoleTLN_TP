@@ -8,9 +8,9 @@ namespace Classes.ClassesEcole
 {
     class Contact
     {
-        private int matricule;
-        private string nom;
-        private int anneeArrivee;
+        protected int matricule;
+        protected string nom;
+        protected int anneeArrivee;
 
         public Contact( int matricule, string nom, int anneeArrivee)
         {
@@ -20,41 +20,14 @@ namespace Classes.ClassesEcole
         }       
     }
 
-    class Etudiant :Contact
-    { 
-        private string section;
-        public Etudiant(int matricule, string nom, int anneeArrivee, string section):base(matricule,nom,anneeArrivee) 
-        {
-            this.section = section;
-        }
+    class secretaire : Personnel
+    {
+
     }
 
-    class EtudiantEchange : Etudiant
+    class Enseignant : Personnel
     {
-        public string universiteOrigine; 
-        public EtudiantEchange(int matricule, string nom, int anneeArrivee, string section, string universiteOrigine) : base(matricule, nom, anneeArrivee, section)
-        {
-            this.universiteOrigine = universiteOrigine;
-        }
-    }
-    class EtudiantRegulier:Etudiant
-    {
-        public double noteMoyenne;
-        EtudiantRegulier(int matricule, string nom, int anneeArrivee, string section, double noteMoyenne) : base(matricule, nom, anneeArrivee, section)
-        {
-            this.noteMoyenne = noteMoyenne;
-        }
-    }
-
-    class Personnel:Contact
-    {
-        private string nomLaboratoire;
-        private double salaire;
-        public Personnel(int matricule, string nom, int anneeArrivee, string nomLaboratoire, double salaire) : base(matricule, nom, anneeArrivee)
-        {
-            this.nomLaboratoire = nomLaboratoire;
-            this.salaire = salaire;
-        }
+        
     }
 
 }

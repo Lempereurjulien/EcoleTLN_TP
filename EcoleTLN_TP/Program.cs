@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace EcoleTLN_TP
 {
-    class EcoleTLN
+    class Program
     {
-        private string nom;
-        private char anneeCreation;
-        static void Main()
+        static void Main(string[] args)
         {
-        }   
+        }
     }
 }

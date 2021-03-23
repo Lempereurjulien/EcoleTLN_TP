@@ -44,8 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contact.cs" />
+    <Compile Include="Enseigant.cs" />
+    <Compile Include="Etudiant.cs" />
+    <Compile Include="EtudiantEchange.cs" />
+    <Compile Include="EtudiantRegulier.cs" />
+    <Compile Include="Personnel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secretaire.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
